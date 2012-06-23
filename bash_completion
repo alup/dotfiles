@@ -1,0 +1,6 @@
+_c()
+{
+    local cur=${COMP_WORDS[COMP_CWORD]}
+    COMPREPLY=( $(compgen -W "$(ls ${HOME}/code)" -- $cur) )
+}
+complete -F _c c

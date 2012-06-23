@@ -1,0 +1,25 @@
+[color]
+  ui = auto
+[merge]
+  tool = meld
+[alias]
+  st = status
+  ci = commit
+  co = checkout
+  di = diff
+  br = branch
+  mod = ls-files -m
+  tip = log -1
+  ds = diff --cached
+  sm = submodule
+  line = log --oneline
+  hard = reset --hard
+  ls = ls-files
+  pop = stash pop
+[core]
+  excludesfile = ~/.gitignore-global
+[url "git@github.com:alup/"]
+  insteadOf = mygithub:
+[user]
+  name = <%= print("Your Name: "); STDOUT.flush; STDIN.gets.chomp %>
+  email = <%= print("Your Email: "); STDOUT.flush; STDIN.gets.chomp %>
