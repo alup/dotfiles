@@ -3,6 +3,7 @@ require 'erb'
 
 desc "install the dot files into user's home directory"
 task :install do
+  install_janus
   install_oh_my_zsh
   switch_to_zsh
   replace_all = false
@@ -86,5 +87,18 @@ def install_oh_my_zsh
     else
       puts "skipping oh-my-zsh, you will need to change ~/.zshrc"
     end
+  end
+end
+
+def install_janus
+  print "install vim plugins (janus)? [ynq] "
+  case $stdin.gets.chomp
+  when 'y'
+    puts "installing janus"
+    system %Q{curl -Lo- https://bit.ly/janus-bootstrap | bash}
+  when 'q'
+    exit
+  else
+    puts "skipping janus installation"
   end
 end
