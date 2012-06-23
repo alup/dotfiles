@@ -1,0 +1,20 @@
+"1.0rc1
+
+loadplugins '\.(js|penta)$'
+group user
+
+" vim: set ft=pentadactyl:
+
+highlight Hint font-size: 14px; background: rgba(210,1,133,0.8) !important; border: 2px solid rgb(165,1,105); padding: 4px; border-radius: 3px; font-weight: bold; margin-left: -25px; color: white; font-family: Helvetica; line-height:1em;
+highlight HintActive background: rgba(145,197,43,0.8) !important;
+highlight HintElem background: rgba(255, 209, 20, 0.7) !important;
+highlight StatusLine -moz-appearance: none !important; font-weight: bold; background: #b3b3b3 !important; border: 0 !important; min-height: 22px !important; text-shadow: none !important; font: normal 14px/1 'Helvetica' !important; padding: 3px 0px 3px 5px !important;
+highlight CmdLine padding: 1px !important; font: normal 14px 'Helvetica' !important;
+highlight CmdOutput font: normal 14px 'Helvetica' !important;
+highlight CompItem font: normal 14px 'Helvetica' !important;
+
+" Highlight all search matches, not just the first.
+set hlfind
+
+" Clear search highlighting and normal highlighting.
+nnoremap <esc><esc> <esc>:noh<CR>
