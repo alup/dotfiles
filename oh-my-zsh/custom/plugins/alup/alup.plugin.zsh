@@ -21,6 +21,7 @@ alias fsize='~/.bin/fsize'
 alias serve='git daemon --reuseaddr --verbose --base-path=. --export-all ./.git'
 alias gs='git status'
 alias gd='git diff'
+alias gitk='gitk --all'
 alias ra='bundle exec rake'
 
 # BINARIES
