@@ -23,6 +23,7 @@ alias gs='git status'
 alias gd='git diff'
 alias gitk='gitk --all'
 alias ra='bundle exec rake'
+alias pry='bundle exec pry'
 
 # BINARIES
 export PATH=$HOME/.bin:$PATH
